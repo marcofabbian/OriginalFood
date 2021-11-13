@@ -1,5 +1,5 @@
-var FoodOrigin = artifacts.require("./FoodOrigin.sol");
+var OriginalFood = artifacts.require("./OriginalFood.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(FoodOrigin);
+  deployer.deploy(OriginalFood);
 };
