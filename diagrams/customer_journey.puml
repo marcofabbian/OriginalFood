@@ -1,0 +1,24 @@
+@startuml "Original Food Journey"
+rectangle "Production" {
+usecase Product as Foo3
+    Farmer -> [Application]
+    [Application] -> Foo3 : block chain recorded
+
+}
+rectangle "Distribution" {
+rectangle Truck as Foo1
+rectangle Train as Foo2
+usecase Product as Foo4
+    Foo3 -> Delegate : Collected
+    Delegate --> Foo1
+    Foo1 -> Foo4 : Shipped
+    Delegate -> Foo2
+    Foo2 -> Foo4 : Shipped
+}
+rectangle "Sale" {
+    Foo4 -> Merchant
+}
+rectangle "Consumtion" {
+    Merchant -> Customer : Buy
+}
+@enduml
