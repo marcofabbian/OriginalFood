@@ -1,4 +1,5 @@
-pragma solidity >=0.4.21 <0.9.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
 import "truffle/Assert.sol";
 import "truffle/DeployedAddresses.sol";
@@ -6,14 +7,12 @@ import "../contracts/OriginalFood.sol";
 
 contract TestOriginalFood {
 
-  function testItStoresAValue() public {
+  function testNameAndSymbol() public {
     OriginalFood originalFood = OriginalFood(DeployedAddresses.OriginalFood());
-
-    originalFood.set(89);
-
-    uint expected = 89;
-
-    Assert.equal(originalFood.get(), expected, "It should store the value 89.");
+    string memory name = "OriginalFood";
+    string memory symbol = "OFT";
+    Assert.equal(originalFood.name(), name, "It returns the name of the Token");
+    Assert.equal(originalFood.symbol(), symbol, "It returns the symbol of the Token");
   }
-
+  
 }

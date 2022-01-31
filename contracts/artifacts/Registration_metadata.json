@@ -1,0 +1,110 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "actor",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "url",
+						"type": "string"
+					}
+				],
+				"name": "Registration",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "actor",
+						"type": "address"
+					}
+				],
+				"name": "isRegistered",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "url",
+						"type": "string"
+					}
+				],
+				"name": "register",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Registration.sol": "Registration"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/IRegistration.sol": {
+			"keccak256": "0xda7894f3d9d17811c4392220d1bc12608bd5e7fa0cb383a075a7932f8f7c3897",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2d4abaf278725d5d2705bfbcf133630e367bef61f6d1cafc100c6a38a727897a",
+				"dweb:/ipfs/QmT4PsxzmZNLdFW4GD5k6F4EdTwxVDxVmfk8QDyPKTiqBh"
+			]
+		},
+		"contracts/Registration.sol": {
+			"keccak256": "0x884ddeec22059a51c128ed1a22e1a941c6f3b82b51e42ec7e9f8c378e016ddce",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://009e0e5c978f67910769718dbfe5bf8df8d0758e6a71a92dfb3929fe87fbbc88",
+				"dweb:/ipfs/QmZx2SkRQ4HPkhRsnZgK2hXEbuFUHVS8TybnDJa5rHnjxy"
+			]
+		}
+	},
+	"version": 1
+}

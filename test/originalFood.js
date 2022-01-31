@@ -1,15 +1,15 @@
-const OriginalFood = artifacts.require("./OriginalFood.sol");
+const originalFood = artifacts.require("./OriginalFood.sol");
 
-contract("OriginalFood", accounts => {
-  it("...should store the value 89.", async () => {
-    const originalFoodInstance = await OriginalFood.deployed();
+contract("OriginalFood contract", accounts => {
+  it("...should return NFT name and symbol.", async () => {
+    const reference = await originalFood.deployed();
 
-    // Set value of 89
-    await originalFoodInstance.set(89, { from: accounts[0] });
+    //NFT Name
+    const name = "OriginalFood";
+    //NFT symbol
+    const symbol = "OFT";
 
-    // Get stored value
-    const storedData = await originalFoodInstance.get.call();
-
-    assert.equal(storedData, 89, "The value 89 was not stored.");
+    assert.equal(await reference.name(), name, "It returns the name of the Token.");
+    assert.equal(await reference.symbol(), symbol, "It returns the symbol of the Token.");
   });
 });
