@@ -29,7 +29,7 @@ Block chain is the tool, a public registry that allow each actors of this new ne
 * Farmers can issue a label for the products at the packaging time that certificate the orogin of the product, date and timem weight and quantity of the product.
 * Dealer can add to a range of products the transport date time and the stops.
 * The merchant and the Customer can verify the product and the information contained on the label
-(/diagrams/business_sequence.png)
+(https://github.com/marcofabbian/OriginalFood/blob/main/diagrams/Business_sequence.png)
 
 ## IV. Use Cases
 * Actor registration : Farmer, Transporter & Merchant
